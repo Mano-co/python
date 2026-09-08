@@ -1,0 +1,15 @@
+def purchase(amount):
+        amount=amount+150
+        print(amount)
+def prime(amount):
+    amount=amount+(150//2)
+    print(amount)
+amount=int(input("Enter the amount:"))
+if amount>2000:
+    print("The delievery is free")
+else:
+    membership=input("Are you a prime member are not:")
+    if membership=="yes":
+        totalamount=prime(amount)
+    else:
+        totalamount=purchase(amount)
