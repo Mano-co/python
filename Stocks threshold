@@ -1,0 +1,8 @@
+n=int(input("No of products:"))
+for i in range(0,n):
+    a=int(input("Enter stocks:"))
+    b=int(input("Enter threshold:"))
+    if(a<b):
+        print("stock",i+1,"should be restocked")
+    else:
+        print("stock",i+1,"should not be restocked")
