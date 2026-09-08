@@ -1,0 +1,12 @@
+original=int(input("Enter a number:"))
+number=original
+sum=0
+while number!=0:
+    remainder=number%10
+    sum=remainder+sum*10
+    number=number//10
+print(sum)   
+if(sum==original):
+    print("It is a palindrome")
+else:
+    print("It is not a palindrome")
