@@ -1,0 +1,8 @@
+n=input("Enter the string:")
+l=len(n)
+if l>50:
+    print("the length is above 50")
+else:
+    for i in range(l):
+        if n[i].isdigit():
+            print(n[i],end="")
