@@ -1,0 +1,6 @@
+totalnumbers=int(input("Enter the totalnumber to be reversed:"))
+numbers=[]
+for i in range(totalnumbers):
+    number=input("Enter the numbers:")
+    numbers.append(number)
+print(numbers[::-1])
