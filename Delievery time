@@ -1,0 +1,8 @@
+partners=int(input("Enter the number of delivery patners:"))
+arr=[]
+largest=0
+for i in range(partners):
+    min=int(input("Enter the minutes:"))
+    arr.append(min)
+result=sorted(arr)
+print("The minimum delievery time",result[0])
