@@ -1,0 +1,15 @@
+n = input("Enter the string: ")
+l = len(n)
+if l > 50:
+    print("The length is above 50")
+elif l<1:
+    print("The length is too short")
+else:
+    counts = {}
+    for i in n:
+        if "a" <= i <= "z":
+            if i in counts:
+                counts[i]+=1
+            else:
+                counts[i]=1
+    print("Alphabet counts:",counts)
