@@ -1,0 +1,11 @@
+original=int(input("Enter a number:"))
+number=original
+sum=0
+while number>0:
+    remainder=number%10
+    sum=sum+remainder**3
+    number//=10
+if(sum==original):
+    print(original,"is a armstrong")
+else:
+    print(original,"is not a armstrong")
