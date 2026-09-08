@@ -1,0 +1,10 @@
+seq = int(input("Sequence number:"))
+arr=[]
+for i in range(seq):
+    val=int(input("Input:"))
+    arr.append(val)
+    if(i>=2 and arr[i-2]==arr[i-1]==arr[i]):
+            print("Suspicious")
+            break
+else:
+    print("Not Suspicious")
